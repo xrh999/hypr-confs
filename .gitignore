@@ -1,0 +1,15 @@
+*
+
+!.gitignore
+
+!/hypr/
+!/hypr/**
+
+!/ghostty/
+!/ghostty/**
+
+!/sway/
+!/sway/**
+
+!/rofi/
+!/rofi/*
