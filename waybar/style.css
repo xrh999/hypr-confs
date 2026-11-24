@@ -1,0 +1,118 @@
+@define-color primary-colour #263747;
+@define-color secondary-colour #96C3CE;
+@define-color accent-colour #C69B62;
+@define-color border-colour #405568;
+@define-color highlight-colour #51B1B8;
+@define-color workspace-colour #304554;
+@define-color hover-colour #3A5160;
+@define-color urgent-colour #B57BA6;
+
+* {
+    border: none;
+    border-radius: 0px;
+
+    font-family: "Adwaita Sans", "JetBrainsMono Nerd Font Propo", sans-serif;
+    font-weight: bold;
+    min-height: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+
+#clock, 
+#workspaces,
+#memory,
+#cpu,
+#battery,
+#pulseaudio-slider,
+#window,
+#custom-notification {
+    background-color: @primary-colour;
+    color: @secondary-colour;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+#workspaces {
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button {
+    color: transparent;
+    padding: 0px 6px;
+    background-color: @workspace-colour;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 20px;
+    margin: 0px 2px;
+    min-width: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    font-size: 13px;
+    color: @accent-colour;
+    background-color: @border-colour;
+    padding: 0px 12px;
+    border-radius: 20px;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+    font-size: 13px;
+    color: @accent-colour;
+    background-color: @hover-colour;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    padding: 0px 12px;
+    border-radius: 20px;
+    min-width: 40px;
+}
+
+#workspaces button.urgent {
+    background-color: @urgent-colour;
+    color: @highlight-colour;
+    padding: 0px 12px;
+    border-radius: 20px;
+    min-width: 20px;
+}
+
+window#waybar{
+    background: transparent;
+}
+
+#window {
+  background-color: @primary-colour;
+  color: @secondary-colour;
+}
+
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+    min-height: 8px;
+    min-width: 100px;
+}
+
+#pulseaudio-slider highlight {
+    min-height: 8px;
+    min-width: 0px;
+}
+
+#pulseaudio-slider.muted highlight {
+    background-color: orange;
+}
+#clock {
+    color: @accent-colour;
+}
+

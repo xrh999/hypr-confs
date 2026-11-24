@@ -1,0 +1,48 @@
+:root {
+  --primary-colour: #3B66A5;
+  --secondary-colour: #8AB3D0;
+  --accent-colour: #FBBC4D;
+  --border-colour: #305791;
+  --highlight-colour: #99B5C0;
+}
+
+window#waybar{
+    background: transparent;
+}
+
+#pulseaudio,
+#custom-brightness,
+#workspaces,
+#cpu,
+#memory,
+#clock {
+    background-color: var(--primary-colour);
+    border: 0px solid #dcdcdc;
+    border-radius: 50px;
+    margin: 4px 5px;
+    
+    /* Center text: 3px top, 1px bottom nudge */
+    padding: 3px 16px 1px 16px;
+    color: #5c616c;
+}
+
+#workspaces {
+    padding: 0 5px;
+}
+
+#workspaces button {
+    padding: 2px 10px 0px 10px;
+    color: #9ea3af;
+    background: transparent;
+    border-radius: 50px;
+    border: none;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+    background-color: #4080fb;
+}
+
+/* Colors */
+#pulseaudio { color: #5c616c; }
+#clock { font-weight: 700; }

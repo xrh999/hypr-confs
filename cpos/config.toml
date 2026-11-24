@@ -1,0 +1,74 @@
+default_language = "cpp"
+theme = "cyan"
+workspace_dir = "/home/helipop/cp"
+template_file = "/home/helipop/cpp/template.cpp"
+cses_session = "054c501720a49652ad96300ff0061193a34ed456"
+show_problem_tags = false
+practice_goal_rating = 1900
+
+[handles]
+codeforces = "Helipop"
+cses = ""
+
+[compile_commands.c]
+compile = "gcc -std=c11 -O2 -o {output} {source} -lm"
+run = "./{output}"
+extension = "c"
+
+[compile_commands.pascal]
+compile = "fpc -O2 -o{output} {source}"
+run = "./{output}"
+extension = "pas"
+
+[compile_commands.javascript]
+run = "node {source}"
+extension = "js"
+
+[compile_commands.rust]
+compile = "rustc -O -o {output} {source}"
+run = "./{output}"
+extension = "rs"
+
+[compile_commands.go]
+run = "go run {source}"
+extension = "go"
+
+[compile_commands.java]
+compile = "javac -d {dir} {source}"
+run = "java -cp {dir} {classname}"
+extension = "java"
+
+[compile_commands.cpp]
+compile = "g++ -std=c++17 -O2 -o {output} {source}"
+run = "./{output}"
+extension = "cpp"
+
+[compile_commands.pypy]
+run = "pypy3 {source}"
+extension = "py"
+
+[compile_commands.kotlin]
+compile = "kotlinc {source} -include-runtime -d {output}.jar"
+run = "java -jar {output}.jar"
+extension = "kt"
+
+[compile_commands.ruby]
+run = "ruby {source}"
+extension = "rb"
+
+[compile_commands.csharp]
+compile = "mcs -out:{output}.exe {source}"
+run = "mono {output}.exe"
+extension = "cs"
+
+[compile_commands.haskell]
+compile = "ghc -O2 -o {output} {source} -outputdir {dir}"
+run = "./{output}"
+extension = "hs"
+
+[compile_commands.python]
+run = "python3 {source}"
+extension = "py"
+
+[template_files]
+cpp = "/home/helipop/cpp/template.cpp"
