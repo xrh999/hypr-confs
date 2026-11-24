@@ -17,6 +17,17 @@ require("modules.keybinds")
 ----------------
 
 hl.config({
+    input = {
+        sensitivity = -0.2,         -- Range: -1.0 to 1.0 (0.0 is default)
+        accel_profile = "flat",    -- Options: "adaptive", "flat", or "custom"
+        force_no_accel = false,    -- Bypasses pointer acceleration (not recommended)
+        left_handed = false,       -- Swaps left and right mouse buttons
+        follow_mouse = 1,          -- 0-3: controls how cursor movement changes window focus
+        natural_scroll = false,    -- Inverts scroll direction
+    }
+})
+
+hl.config({
     layers = {
         allow_new_top_layers_over_existing_fullscreen = true,
     },

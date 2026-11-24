@@ -7,7 +7,8 @@ local function exec(command)
 end
 
 -- Shutdown/logout menu
-hl.bind("SUPER + SHIFT + E", exec("lua ~/.config/hypr/scripts/powermenu.lua"), { description = "Exit Hyprland" })
+hl.bind(mainMod .. " + M", exec("hyprshutdown"))
+hl.bind(mainMod .. " + SHIFT + E", exec("lua ~/.config/hypr/scripts/powermenu.lua"), { description = "Exit Hyprland" })
 
 -- Applications
 
@@ -29,7 +30,7 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 -- Moved from SUPER + S to SUPER + J to avoid
 -- conflicting with the scratchpad binding.
 
-hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
+hl.bind(mainMod .. " + E", hl.dsp.layout("togglesplit"))
 
 
 -- Screenshots

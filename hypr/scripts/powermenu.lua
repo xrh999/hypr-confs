@@ -2,6 +2,7 @@ local options = {
     { label = "Sleep", command = "systemctl suspend"},
     { label = "Shut down", command = "hyprshutdown -t 'Shutting down...' --post-cmd 'shutdown -P 0'"},
     { label = "Restart", command = "hyprshutdown -t 'Restarting...' --post-cmd 'reboot'"},
+    { label = "Exit Hyprland", command = "hyprshutdown"}
 }
 
 -- "printf 'idk\nidk\nidk' | rofi -dmenu -p 'heh'"

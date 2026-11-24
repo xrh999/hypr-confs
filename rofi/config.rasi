@@ -7,7 +7,5 @@ configuration {
       directories-first: true;
       sorting-method:    "name";
   }
-  modes: [ combi ];
-  combi-modes: [ window, drun, run ];
 }
 @theme "mytheme.rasi"
